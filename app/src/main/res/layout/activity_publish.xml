@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.lanyu.moments.publish">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#ff08f11e"
+        android:id="@+id/button4"
+        android:textSize="25dp"
+        android:background="#00000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表文字"
+        android:textSize="30dp"
+        android:id="@+id/textView8"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表"
+        android:textColor="#ff08f11e"
+        android:id="@+id/button5"
+        android:textSize="25dp"
+        android:background="#00000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:textAlignment="viewStart"
+            android:text=""
+            android:textSize="25dp"
+            android:background="@null"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在位置"
+            android:textSize="20dp"
+            android:id="@+id/textView9"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textSize="20dp"
+            android:id="@+id/textView10"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_marginStart="92dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="谁可以看"
+            android:textSize="20dp"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公开"
+            android:textSize="20dp"
+            android:id="@+id/textView12"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_marginStart="92dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
