@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        >
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:background="@drawable/head_btn_back"
+        android:textColor="#fff"
+        android:id="@+id/search_cancel_btn"
+        android:layout_alignParentLeft="true"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="信息查询"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:id="@+id/search_title_tv"
+
+        android:gravity="center"
+        android:background="#ff0000"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="确定"
+        android:background="@drawable/head_btn_back"
+        android:textColor="#fff"
+        android:id="@+id/search_submit_btn"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/search_start_btn"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/search_end_btn"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff0000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

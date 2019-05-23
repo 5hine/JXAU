@@ -1,0 +1,534 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="取消"
+            android:background="@drawable/head_btn_back"
+            android:textColor="#fff"
+            android:id="@+id/add_cancel_btn"
+            android:layout_alignParentLeft="true"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="健康信息录入"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#ff0000"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="确定"
+            android:background="@drawable/head_btn_back"
+            android:textColor="#fff"
+            android:id="@+id/add_submit_btn"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="运动数据"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="晨跑"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/mornrun_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/mornrun_end_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="里        程"
+            android:layout_marginRight="5dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_back"
+            android:hint="例如输入1000(单位为米)"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:id="@+id/run_distance"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="早操晨练"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/exercise_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/exercise_end_btn"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="日间行走"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/walk_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/walk_end_btn"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="骑行"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/ride_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/ride_end_btn"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="里        程"
+            android:layout_marginRight="5dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_back"
+            android:hint="例如输入1000(单位为米)"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:id="@+id/ride_distance"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="游泳"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/swim_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/swim_end_btn"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="球类运动"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/ball_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/ball_end_btn"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/input_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="晚间跑步"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:background="@drawable/input_back"
+            android:gravity="left|center_vertical"
+            android:id="@+id/evenrun_start_btn"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="格式为18:00:00"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/input_back"
+            android:id="@+id/evenrun_end_btn"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="里        程"
+            android:layout_marginRight="5dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_back"
+            android:hint="例如输入1000(单位为米)"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:id="@+id/evenrun_distance"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
